@@ -1,3 +1,11 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import (
+	Proveedor,
+	Entradas,
+	Inventario
+	)
+
+admin.site.register(Proveedor)
+admin.site.register(Entradas)
+admin.site.register(Inventario)

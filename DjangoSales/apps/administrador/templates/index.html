@@ -3,4 +3,10 @@
 {% block home %}class="active"{% endblock home %}
 {% block contenido %}
 	<h1>Hola Mundo</h1>
+	{% for Proveedor in proveedores %}
+	<li>{{ Proveedor.nombre }}</li>
+	<li>{{ Proveedor.telefono }}</li>
+	<li>{{ Proveedor.correo }}</li>
+	<hr/>
+	{% endfor %}
 {% endblock contenido %}
