@@ -2,5 +2,13 @@
 {% block titulo %}Bienvenido{% endblock titulo %}
 {% block home %}class="active"{% endblock home %}
 {% block contenido %}
-	<h1>Hola Mundo</h1>
+	<h1>Hola Mundo {{ suma.precio__avg }}</h1>
+	{% for x in provedores %}
+		<li>{{ x.producto }}</li>
+		<li>{{ x.proveedor.telefono }}</li>
+		<li>{{ x.cantidad }}</li>
+		<li>{{ x.tipo }}</li>
+		<li>{{ x.precio }}</li>
+		<hr/>
+	{% endfor %}
 {% endblock contenido %}
