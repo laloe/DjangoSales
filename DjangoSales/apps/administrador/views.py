@@ -16,5 +16,10 @@ class IndexView(TemplateView):
         context['suma'] = Entradas.objects.all().aggregate(Avg('precio'))
         return context
 
-class SecondView(TemplateView):
-    template_name = "second.html"
+class EntradasView(TemplateView):
+    template_name = "entradas.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(EntradasView, self).get_context_data(**kwargs)
+        context['entradas'] = Entradas.objects.all()
+        return context
