@@ -1,11 +1,19 @@
 from django.db import models
 
 unidades = (
+<<<<<<< HEAD
 	("kg","kilogramos"),
 	("litros","litros"),
 	("cajas","cajas"),
 	("piezas","piezas"),
 	("paquetes","paquetes"),
+=======
+	("kilogramos","kilogramos"),
+	("litros","litros"),
+	("cajas","cajas"),
+	("piezas","piezas"),
+	("paquete","paquete"),
+>>>>>>> isra/dev
 	)
 
 class Proveedor(models.Model):
@@ -16,7 +24,11 @@ class Proveedor(models.Model):
 
 	class Meta:
 		verbose_name = "Proveedor"
+<<<<<<< HEAD
 		verbose_name_plural = "Proveedors"
+=======
+		verbose_name_plural = "Proveedores"
+>>>>>>> isra/dev
 
 	def __str__(self):
 		return self.nombre
@@ -44,5 +56,9 @@ class Inventario(models.Model):
 	is_active = models.BooleanField(default=True)
 
 	def __str__(self):
+<<<<<<< HEAD
 		return self.producto
 		
+=======
+		return self.producto
+>>>>>>> isra/dev

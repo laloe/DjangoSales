@@ -1,7 +1,9 @@
 {% extends "base.html" %}
-{% block titulo %}Bienvenido{% endblock titulo %}
+{% block titulo %}Bienvenido|DjangoSales{% endblock titulo %}
 {% block home %}class="active"{% endblock home %}
+{% block navbar %}Dashboard{% endblock navbar %}
 {% block contenido %}
+<<<<<<< HEAD
 	<h1>Hola Mundo</h1>
 	{% for Proveedor in proveedores %}
 	<li>{{ Proveedor.nombre }}</li>
@@ -9,4 +11,7 @@
 	<li>{{ Proveedor.correo }}</li>
 	<hr/>
 	{% endfor %}
+=======
+    
+>>>>>>> isra/dev
 {% endblock contenido %}

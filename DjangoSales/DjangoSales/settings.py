@@ -72,7 +72,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'ventas_db',
         'USER': 'ventas',
+<<<<<<< HEAD
         'PASSWORD': 'ventasroot',
+=======
+        'PASSWORD': 'ventas_root',
+>>>>>>> isra/dev
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -101,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-mx'
 
 TIME_ZONE = 'UTC'
 
